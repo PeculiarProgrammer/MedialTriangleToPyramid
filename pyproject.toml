@@ -1,0 +1,17 @@
+[project]
+name = "medialtriangletopyramid"
+version = "0.1.0"
+description = "Explanation of solving for the volume of a pyramid based on a medial triangle"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "manim-voiceover[gtts,openai,transcribe]>=0.3.7",
+    "manim>=0.18.1",
+    "setuptools>=75.6.0",
+]
+
+[tool.uv]
+override-dependencies = [
+  # Newer version is needed otherwise trenton can not be installed properly
+  "openai-whisper>=20240927",
+]
